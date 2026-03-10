@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.1d4d97ce.css",
-    "main.js": "/my-portfolio/static/js/main.210ae790.js",
+    "main.css": "/my-portfolio/static/css/main.a6d7ec8f.css",
+    "main.js": "/my-portfolio/static/js/main.0302e094.js",
     "static/media/lpcl.png": "/my-portfolio/static/media/lpcl.4eedcfdbd854e8179d7c.png",
     "static/media/lioreliora.jpg": "/my-portfolio/static/media/lioreliora.2e992a593405a0b0b95e.jpg",
     "static/media/agc_church.jpg": "/my-portfolio/static/media/agc_church.81bc34caed69905ac253.jpg",
     "static/media/farmstore.jpg": "/my-portfolio/static/media/farmstore.dfc87e1c29e97701af2c.jpg",
+    "static/media/VictorAkorGodwin_CV.pdf": "/my-portfolio/static/media/VictorAkorGodwin_CV.553955a8315a20bc3757.pdf",
     "static/media/lightit-slp.jpg": "/my-portfolio/static/media/lightit-slp.429def83b05ca40c41db.jpg",
     "static/media/contq-x.jpg": "/my-portfolio/static/media/contq-x.b553b8a81579bfc18dff.jpg",
     "static/media/avtek.png": "/my-portfolio/static/media/avtek.555559ffe69d52d220e7.png",
@@ -14,7 +15,6 @@
     "static/media/paau.jpg": "/my-portfolio/static/media/paau.f93b9e63f0389c3789c8.jpg",
     "static/media/realestatems.jpg": "/my-portfolio/static/media/realestatems.4e674e0e8e3f69c7c3f0.jpg",
     "static/media/mee-removebg.png": "/my-portfolio/static/media/mee-removebg.af329a264a7a03a37c78.png",
-    "static/media/VictorAkorGodwin_CVV.pdf": "/my-portfolio/static/media/VictorAkorGodwin_CVV.5aa818ce08682c2564ed.pdf",
     "static/media/learning_system.png": "/my-portfolio/static/media/learning_system.120a1eba902f89a75678.png",
     "static/media/DemiPay.jpeg": "/my-portfolio/static/media/DemiPay.723d2ea41d317edf9861.jpeg",
     "static/media/arrow.png": "/my-portfolio/static/media/arrow.be694910ea01430d1764.png",
@@ -24,11 +24,11 @@
     "static/media/linkedin_icon.png": "/my-portfolio/static/media/linkedin_icon.63b96b9ea7fdfd7a5ee0.png",
     "static/media/exp.png": "/my-portfolio/static/media/exp.e2dbb80b394ec8c693d2.png",
     "index.html": "/my-portfolio/index.html",
-    "main.1d4d97ce.css.map": "/my-portfolio/static/css/main.1d4d97ce.css.map",
-    "main.210ae790.js.map": "/my-portfolio/static/js/main.210ae790.js.map"
+    "main.a6d7ec8f.css.map": "/my-portfolio/static/css/main.a6d7ec8f.css.map",
+    "main.0302e094.js.map": "/my-portfolio/static/js/main.0302e094.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d4d97ce.css",
-    "static/js/main.210ae790.js"
+    "static/css/main.a6d7ec8f.css",
+    "static/js/main.0302e094.js"
   ]
 }
