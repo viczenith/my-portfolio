@@ -22,7 +22,7 @@ function Contact() {
 
 
 
-  var name, setName, email, setEmail, message, setMessage;
+  var name, setName, email, setEmail, message, setMessage, status, setStatus;
 
   [name, setName] = useState('');
 
@@ -30,17 +30,41 @@ function Contact() {
 
   [message, setMessage] = useState('');
 
+  [status, setStatus] = useState('');
+
 
 
   function handleSubmit(e) {
 
     e.preventDefault();
 
-    var subject = encodeURIComponent('Portfolio Contact from ' + name);
+    setStatus('sending');
 
-    var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
-
-    window.location.href = 'mailto:akorvikkyy@gmail.com?subject=' + subject + '&body=' + body;
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: '84f32690-ff75-4dfd-885e-39c15b58db7b',
+        name: name,
+        email: email,
+        message: message,
+        subject: 'Portfolio Contact from ' + name
+      })
+    })
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      if (data.success) {
+        setStatus('success');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        setStatus('error');
+      }
+    })
+    .catch(function() {
+      setStatus('error');
+    });
 
   }
 
@@ -188,7 +212,17 @@ function Contact() {
 
             ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit" disabled={status === 'sending'}>
+              {status === 'sending' ? 'Sending...' : 'Send Message'}
+            </button>
+
+            {status === 'success' && (
+              <p className="form-status success">Message sent successfully! I'll get back to you soon.</p>
+            )}
+
+            {status === 'error' && (
+              <p className="form-status error">Something went wrong. Please try again.</p>
+            )}
 
           </form>
 
